@@ -1,2 +1,2 @@
-# sjohnatas7.github.io
+# Pelucio
 Portfilio para uma artista independente
