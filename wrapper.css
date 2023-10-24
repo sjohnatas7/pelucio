@@ -1,0 +1,156 @@
+/* MÉDIO */
+@media (max-width: 768px) {
+    #subTitulo {
+        font-size: 1.3rem;
+    }
+}
+
+/* PEQUENO */
+@media (max-width: 576px) {
+    html {
+        font-size: 9pt;
+    }
+
+    body {
+        grid-template-rows: 13vw auto 30vw;
+    }
+
+    #logo {
+        width: 100%;
+        min-width: 80px;
+    }
+
+
+    #opcoes div:nth-child(1),
+    #opcoes div:nth-child(2),
+    #opcoes div:nth-child(3) {
+        margin-right: .5em;
+    }
+
+    #navRedes img {
+        max-width: 4.5vw;
+    }
+
+    #navRedes :nth-child(1),
+    #navRedes :nth-child(2) {
+        margin-right: .5em;
+    }
+
+    #resenhaECoisaSeria {
+        margin-top: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .display-md-none {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    nav.container {
+        width: 100vw;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+    #navRedes{
+        flex-direction: row;
+        justify-content: center;
+    }
+    #main {
+        width: 100%;
+    }
+    #opcoes{
+        position: relative;
+        transform: none;
+        left: 0;
+        align-items: center;
+    }
+
+    #galeria {
+        /* quadrado: 384x365 // retangulo: 325x734 */
+        display: grid;
+        gap: .5rem;
+        grid-template-areas:
+            "img1 img6"
+            "img4 img2"
+            "img3 img5";
+    }
+
+    #who {
+        width: 100%;
+    }
+
+    .topicoWho {
+        flex-direction: column;
+    }
+
+    #tituloWho {
+        text-align: center;
+    }
+
+
+    #primeiroTexto h2, #primeiroTexto p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #primeiroTexto h2{
+        order: 1;
+    }
+
+    #primeiroTexto img {
+        width: 88%;
+        position: relative;
+        left: 0px;
+        margin: 20px auto;
+        order: 2;
+    }
+    #primeiroTexto p{
+        order: 3;
+    }
+    #segundoTexto {
+        flex-direction: column-reverse;
+    }
+
+    #segundoTexto p {
+        position: relative;
+        width: 100%;
+    }
+
+    #segundoTexto img {
+        width: 88%;
+        margin: 20px auto;
+
+    }
+
+    #terceiroTexto img {
+        width: 88%;
+        position: relative;
+        left: 0px;
+        margin: 20px auto;
+
+    }
+
+    #terceiroTexto p {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #galeriaProdutos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5rem;
+
+        grid-template-areas:
+            "galeriaImg1 galeriaImg2"
+            "galeriaImg4 galeriaImg5"
+            "galeriaImg6 galeriaImg3";
+    }
+
+    .corpoLetsTalk {
+        font-size: 1.15rem;
+    }
+
+    .footerIcones i.fa {
+        font-size: 30px;
+    }
+}
